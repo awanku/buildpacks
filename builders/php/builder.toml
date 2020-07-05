@@ -1,0 +1,14 @@
+[[buildpacks]]
+id = "id.awanku.buildpacks.php"
+version = "0.0.1"
+uri = "../../buildpacks/php"
+
+[[order]]
+[[order.group]]
+id = "id.awanku.buildpacks.php"
+version = "0.0.1"
+
+[stack]
+id = "id.awanku.stacks.php"
+run-image = "awanku/buildpack-php-run"
+build-image = "awanku/buildpack-php-build"

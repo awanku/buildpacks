@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+layersdir=$1
+
+echo "---> Installing composer packages"
+composer install
+echo 'processes = [{ type = "web", command = "php artisan serve --host=0.0.0.0"}]' > "$layersdir/launch.toml"

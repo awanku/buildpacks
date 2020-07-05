@@ -1,0 +1,9 @@
+api = "0.2"
+
+[buildpack]
+id = "id.awanku.buildpacks.php"
+version = "0.0.1"
+name = "PHP Buildpack"
+
+[[stacks]]
+id = "id.awanku.stacks.php"
